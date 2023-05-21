@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquib - Developer Portfolio</title>
+
+    <!-- link Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- link file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contanier">
+        <header>
+            <nav>
+                <p href="#" class="logo">Aquib's Portfolio</p>
+                <!-- <div class="nav-links"> -->
+                    <!-- <a href="#">Home</a> -->
+                    <!-- <a href="#">About</a> -->
+                    <!-- <a href="#">Services</a> -->
+                    <!-- <a href="#">Projects</a> -->
+                    <!-- <a href="#">Contact</a> -->
+                <!-- </div> -->
+                <button class="btn" onclick="redirectToMail()">Contact</button>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div class="hero-text">
+                <h1>Mohammad Aquib</h1>
+                <span>Passionate <span class="auto-type"></span> </span>
+                <p>Hello, I'm Mohd Aquib, a DevOps engineer specializing in smooth software delivery and infrastructure automation. I also have experience in frontend development, crafting engaging user interfaces and enhancing website performance. I've demonstrated my frontend skills on platforms like Fiverr. My goal is to connect development and operations, ensuring efficient and dependable software delivery.</p>
+                <button class="btn" onclick="openResume()">Download CV</button>
+            </div>
+            <div class="hero-img">
+                <img src="hero.png" alt="">
+            </div>
+        </div>
+
+        <div class="soial-links">
+            <span>Follow Me</span>
+            <a href="https://linkedin.com/in/mohdaquib171/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/mohdaquib171/"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/mohdaquib171"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["DevOps Engineer", "Web Developer"],
+            typeSpeed: 80,
+            backSpeed: 50,
+            loop: true
+        })
+
+        function redirectToMail() {
+            window.location.href = "mailto:mohdaquib171@gmail.com";
+        }
+
+        function openResume() {
+            window.open('mohdaquib-resume.pdf', '_blank');
+        }
+    </script>
+</body>
+</html>
