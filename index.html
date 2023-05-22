@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aquib - Developer Portfolio</title>
 
     <!-- link Font awesome cdn -->
@@ -11,43 +11,53 @@
 
     <!-- link file CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- link bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
+
 <body>
-    <div class="contanier">
-        <header>
-            <nav>
-                <p href="#" class="logo">Aquib's Portfolio</p>
-                <!-- <div class="nav-links"> -->
-                    <!-- <a href="#">Home</a> -->
-                    <!-- <a href="#">About</a> -->
-                    <!-- <a href="#">Services</a> -->
-                    <!-- <a href="#">Projects</a> -->
-                    <!-- <a href="#">Contact</a> -->
-                <!-- </div> -->
-                <button class="btn" onclick="redirectToMail()">Contact</button>
-            </nav>
-        </header>
-
-        <div class="content">
-            <div class="hero-text">
-                <h1>Mohammad Aquib</h1>
-                <span>Passionate <span class="auto-type"></span> </span>
-                <p>Hello, I'm Mohd Aquib, a DevOps engineer specializing in smooth software delivery and infrastructure automation. I also have experience in frontend development, crafting engaging user interfaces and enhancing website performance. I've demonstrated my frontend skills on platforms like Fiverr. My goal is to connect development and operations, ensuring efficient and dependable software delivery.</p>
-                <button class="btn" onclick="openResume()">Download CV</button>
-            </div>
-            <div class="hero-img">
-                <img src="hero.png" alt="">
-            </div>
+    <!-- navbar -->
+    <nav class="navbar mt-4 mb-5 ">
+        <div class="container-fluid nav-container">
+            <h1 class="text-white brand text-center">Aquib's Portfolio</h1>
+            <button class="btn btn-lg rounded-pill text-white" onclick="redirectToMail()">Contact</button>
         </div>
+    </nav>
 
-        <div class="soial-links">
-            <span>Follow Me</span>
-            <a href="https://linkedin.com/in/mohdaquib171/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/mohdaquib171/"><i class="fa-brands fa-github"></i></a>
-            <a href="https://twitter.com/mohdaquib171"><i class="fa-brands fa-twitter"></i></a>
+    <!-- hero -->
+    <div class="container-fluid text-white" id="hero">
+        <div class="row align-items-center justify-content-between flex-md-column flex-lg-row">
+            <div class="col-lg-6 col-12  content mb-5">
+                <h1 class="mb-2">Mohammad Aquib</h1>
+                <h2 class="mb-5 fs-1">Passionate <span class="auto-type"></span> </h2>
+                <p class="fs-5 mb-4 mw-75">Hello, I'm Mohd Aquib, a DevOps engineer specializing in smooth software delivery and infrastructure
+                    automation. I also have experience in frontend development, crafting engaging user interfaces and
+                    enhancing website performance. I've demonstrated my frontend skills on platforms like Fiverr. My
+                    goal is to connect development and operations, ensuring efficient and dependable software delivery.
+                </p>
+                <button class="btn btn-lg rounded-pill text-white" onclick="openResume()">Download CV</button>
+            </div>
+            <div class="col-lg-6 col-12  hero-img rounded pt-3 pb-3 mb-4">
+                <img src="hero.png" class=" img-fluid " alt="">
+            </div>
         </div>
     </div>
 
+    <!-- social links -->
+    <div class="social-links">
+        <span>Follow Me</span>
+        <a href="https://linkedin.com/in/mohdaquib171/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/mohdaquib171/"><i class="fa-brands fa-github"></i></a>
+        <a href="https://twitter.com/mohdaquib171"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed(".auto-type", {
@@ -66,4 +76,5 @@
         }
     </script>
 </body>
+
 </html>
